@@ -10,9 +10,8 @@ class Settings(BaseSettings):
     access_token_minutes: int = 720
     database_url: str = "sqlite:///./plansphere.db"
     storage_dir: str = "./storage"
-    allowed_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
-    frontend_url: str = "http://localhost:5173"
-
+    allowed_origins: str = "http://localhost:5173,http://127.0.0.1:5173,https://plansphereai-app.netlify.app,https://playful-quokka-3f8f3f.netlify.app"
+    frontend_url: str = "https://plansphereai-app.netlify.app"
     # AI and online research
     openai_api_key: str = ""
     openai_base_url: str = "https://api.openai.com/v1"

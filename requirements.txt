@@ -16,3 +16,4 @@ shapely==2.2.0
 pyproj==3.8.0
 email-validator==2.2.0
 python-dotenv==1.1.0
+psycopg2-binary==2.9.10

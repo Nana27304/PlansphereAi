@@ -76,6 +76,10 @@ app = FastAPI(
     version="1.0.0",
     description="AI workspace for development planning, settlement planning, land economy, geography, statistics and GIS.",
 )
+@app.get("/")
+def root():
+    return {"message": "Plansphere API is live", "docs": "/docs", "status": "ok"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[

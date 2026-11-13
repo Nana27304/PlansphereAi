@@ -3,7 +3,6 @@ from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, T
 from sqlalchemy.orm import relationship
 from .database import Base
 
-
 def utcnow():
     return datetime.now(timezone.utc)
 
@@ -99,3 +98,4 @@ class Payment(Base):
     status = Column(String(24), default="pending", nullable=False, index=True)
     created_at = Column(DateTime(timezone=True), default=utcnow, nullable=False)
     paid_at = Column(DateTime(timezone=True), nullable=True)
+    
